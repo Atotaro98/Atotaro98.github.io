@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Stylish', sans-serif;
+    
+}
+    
+
+    .background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+    }
+    
+    .background::after {
+        content: '';
+        background-image: url('../images/background.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(35%) opacity(95%);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 30% 70%;
+    }
+    
+    .titles {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+        .titles h1 {
+            font-size: 80px;
+            font-weight: 400;
+            width: 100%;
+            padding-top: 5%;
+        }
+
+    .console-container {
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: -50px;
+      }
+      .console-underscore {
+         display:inline-block;
+        position:relative;
+        top:-0.14em;
+        left:10px;
+      }
+    
+    
+    .info {
+        margin-top: 50px;
+        height: 260px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .left {
+        display: flex;
+        margin-left: 150px;
+        justify-content: flex-end;
+    }
+    
+    .left figure img {
+        width: 240px;
+        border: 2px solid black;
+    }
+    
+    .left p {
+        color: white;
+        font-size: 26px;
+        width: 320px;
+        margin-left: 25px;
+    }
+    
+    .right {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: left;
+        margin-bottom: 10px;
+        margin-left: 30%;
+    }
+    
+    .right-portfolio p {
+        width: 220px;
+        border-bottom: 1px solid #00DBDE;
+        text-align: center;
+        padding-bottom: 5px;
+        font-size: 28px;
+        
+    }
+    
+    .right-portfolio p a {
+        color: #00DBDE;
+        text-decoration: none;
+    }
+    
+    .right-contact {
+        align-self: flex-end;
+    }
+    
+    .right-contact p {
+        width: 220px;
+        border-bottom: 1px solid #00DBDE;
+        text-align: center;
+        padding-bottom: 5px;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .right-contact p a {
+        color: #00DBDE;
+        text-decoration: none;
+    }
+    
+    .contact-social {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .contact-social figure .redes{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-radius: 50%;
+        color: #00DBDE;
+        font-size: 32px;
+        text-align: center;
+        line-height: 50px;
+        margin: 0 15px 0 0;
+        transition: all ease 0.5s;
+    }
+
+    .contact-social figure .redes:hover{
+    background: #fff;
+    color: #333;
+}
+    
+    @media screen and (max-width: 1150px) {
+        .container {
+            padding-top: unset;
+        }
+        .info {
+            grid-template-columns: 1fr;
+        }
+        .left {
+            margin-left: unset;
+            justify-content: center;
+        }
+        .right {
+            grid-template-rows: 1fr;
+            justify-content: center;
+            margin-top: 3%;
+            margin-left: 0;
+        }
+
+
+        .background {
+            min-height: 130vh;
+   
+        }
+        .right-portfolio p {
+            margin: 20px 0 40px 0;
+            
+        }
+        
+        
+    }
+    
+    @media screen and (max-width: 765px) {
+        .titles h1 {
+            font-size: 60px;
+        }
+        
+        .left figure img {
+            width: 180px;
+        }
+        .left p {
+            font-size: 23px;
+        }
+
+        .console-container{
+            margin-top: 10px;
+           
+        }
+
+        .console-container {
+            font-size: 20px;
+          }
+    } 
+    
+    @media screen and (max-width: 580px) {
+        .container {
+            grid-template-rows: 20% 80%;
+            height: 80%;
+            
+        }
+        .titles h1 {
+            font-size: 50px;
+        }
+        .titles p {
+            font-size: 25px;
+            margin-top: -40px;
+        }
+        .info {
+            margin-top: 0;
+        }
+        .left {
+            flex-wrap: wrap;
+        }
+        .left figure {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            padding-bottom: 20px;
+        }
+        .left p {
+            display: flex;
+            width: 80%;
+            text-align: center;
+        }
+    }
+
+
+
