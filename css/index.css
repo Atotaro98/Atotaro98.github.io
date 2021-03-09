@@ -87,6 +87,7 @@ body {
     .left figure img {
         width: 240px;
         border: 2px solid black;
+        margin-top: 100px;
     }
     
     .left p {
@@ -198,6 +199,7 @@ body {
         
         .left figure img {
             width: 180px;
+            margin-top: 0px;
         }
         .left p {
             font-size: 23px;
