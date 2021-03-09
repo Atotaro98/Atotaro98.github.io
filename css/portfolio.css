@@ -78,56 +78,18 @@ body {
 
 /* ---------------    Perfil  -------------- */
 
-.img-container {
-    position: relative;
-    background: url(alejodoc.jpeg) no-repeat;
-    background-size: cover;
-    min-height: 350px;
-    background-position: 0 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
 
-.profile {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr 1fr 70px;
-    max-height: 90vh;
-    min-width: 350px;
-    border-radius: 4px;
-    margin-left: 12px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15);
-}
 
-.profile-body {
-    position: relative;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
 
-.name {
-    margin: 32px auto 12px;
-    font-size: 2.2em;
-    letter-spacing: 1px;
-}
-
-.role {
-    color: #00DBDE;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    letter-spacing: 1px;
-}
 .socials{
     align-items: center;
-    
+    margin: 20px 0 20px 0;
     text-align: center;
 }
 .socials a {
     text-decoration: none;
     margin: 8px;
+    font-size: 22px;
     
 }
 
