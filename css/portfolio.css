@@ -266,6 +266,11 @@ button {
     margin-top: 28px;
 }
 
+.section-sub-item a{
+    color: #00DBDE;
+    margin-left: 50px;
+}
+
 .time {
     color: #78cc6d;
     border: 1px solid;
