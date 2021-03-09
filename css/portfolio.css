@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Stylish', sans-serif;
-    color: #313131;
+    color: #fff;
 }
 
 a,
@@ -34,7 +34,7 @@ body {
 /* ---------------    Menu  -------------- */
 
 .menu {
-    background-color: #fff;
+    background-color: #333;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@ body {
     font-size: 0.8em;
     letter-spacing: 0.5px;
     font-weight:bold;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
     cursor: pointer;
 }
 
@@ -101,7 +101,7 @@ body {
 
 .profile-body {
     position: relative;
-    background-color: #fff;
+    background-color: #333;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -133,10 +133,10 @@ body {
 
 .actions {
     position: relative;
-    background-color: #fff;
+    background-color: #333;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #333;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -168,13 +168,13 @@ button {
 .main {
     max-height: 80vh;
     overflow-y: auto;
-    background-color: #fff;
+    background-color: #333;
     align-self: center;
     border-radius: 4px;
 }
 
 .main * {
-    color: #656565;
+    color: #fff;
     
 }
 
@@ -183,11 +183,11 @@ button {
 .title {
     font-size: 1.4em;
     letter-spacing: 1px;
-    color: #313131;
+    color: #fff;
     font-weight: bold;
     text-transform: capitalize;
     width: 100%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
 }
 
 .title span {
@@ -223,10 +223,7 @@ button {
     border-radius: 4px;
 }
 
-.item label span {
-    color: #313131;
-    letter-spacing: 3px;
-}
+
 
 
 /* ---------------    Dominios  -------------- */
@@ -261,7 +258,7 @@ button {
 }
 
 .domain-name {
-    color: #313131;
+    color: #fff;
     font-weight: bold;
     margin: 16px auto 12px;
 }
@@ -284,7 +281,7 @@ button {
 
 .section-item i {
     color: #00DBDE;
-    margin-right: 16px;
+    
     display: inline-block;
 }
 
@@ -319,7 +316,7 @@ button {
 }
 
 .item-name {
-    color: #313131;
+    color: #fff;
     font-size: 1.2em;
 }
 
@@ -445,6 +442,12 @@ button {
 @media (max-width: 650px) {
     body {
         padding: 80px 16px;
+    }
+
+    .menu-item {
+        width: 55px;
+        height: 65px;
+        font-size: 0.5em;
     }
 
     .profile,
